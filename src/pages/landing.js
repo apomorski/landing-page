@@ -4,12 +4,9 @@ import {LandingBanner, Navbar} from '../components';
 
 function LandingPage() {
     return (
-        <>
-        <Navbar />
         <LandingBanner>
-            hdjashdjahsjdhajshdjahs
+            <Navbar />
         </LandingBanner>
-        </>
     );
 }
 

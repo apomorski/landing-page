@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
+import './hero.css';
 import 'bulma';
 
 function LandingBanner(props) {
     return(
-        <section class="hero">
-            <div className="hero-body">
-                {props.children}
-            </div>
-        </section> 
+        <div className="cover-bg">
+            <section className="hero is-center">
+                <div className="hero-body"> 
+                    { props.children }
+                </div>
+            </section> 
+        </div>
+
     );
 }
 
