@@ -1,5 +1,6 @@
 .cover-bg {
-    background-image: url('../../assets/img/ctrade-bg.png');
+    /* background-image: url('../../assets/img/ctrade-bg.png'); */
+    background-color: #111;
     height: 100vh;
     background-size: cover;
 }
