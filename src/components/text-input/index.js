@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './TextInput.css'
 
-function TextInput() {
+function TextInput(props) {
 
     const [emailAddress, setEmailAddress] = useState('');
 
@@ -12,12 +12,15 @@ function TextInput() {
     }
 
     return(
-        <input
-            type="text"
-            className="text-input-styled"
-            value={emailAddress}
-            onChange={e => setEmailAddress(e.target.value)}
-        />
+        <div>
+            <input
+                type="text"
+                className="text-input-styled"
+                value={emailAddress}
+                placeholder={props.inputPlaceholder}
+                onChange={e => setEmailAddress(e.target.value)}
+            />
+        </div>
     );
 }
 

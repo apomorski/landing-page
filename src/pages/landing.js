@@ -1,5 +1,5 @@
 import React from 'react';
-import {LandingBanner, Navbar, TextInput} from '../components';
+import {LandingBanner, Navbar} from '../components';
 
 
 function LandingPage() {
