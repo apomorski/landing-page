@@ -1,24 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './TextInput.css'
 
 function TextInput(props) {
-
-    const [emailAddress, setEmailAddress] = useState('');
-
-    const handleEmailSubmit = event => {
-        // TODO validators
-        event.preventDefault();
-        console.info(`email: ${emailAddress}`);
-    }
 
     return(
         <div>
             <input
                 type="text"
+                value={props.textValue}
                 className="text-input-styled"
-                value={emailAddress}
+                onChange={e => props.inputChangeHandler(e.target.value)}
                 placeholder={props.inputPlaceholder}
-                onChange={e => setEmailAddress(e.target.value)}
             />
         </div>
     );

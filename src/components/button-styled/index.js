@@ -7,6 +7,7 @@ function ButtonStyled(props) {
         <button
             className="btn-styled"
             type="button"
+            onClick={props.clickHandler}
         >
         {props.buttonText}
         </button>
