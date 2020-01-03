@@ -5,12 +5,14 @@ import { TextInput } from '../text-input';
 
 function Navbar() {
     return (
-        <>
+        <div className="colummns is-centered">
             <div className="columns is-mobile is-centered ">
                 <img src={Logo} />
             </div>
-            <TextInput /> 
-        </>
+            <div className="columns is-mobile is-centered">
+                <TextInput />
+            </div>
+        </div>
     );
 }
 
