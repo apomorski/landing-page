@@ -29,7 +29,7 @@ function Navbar() {
 
     const handleEmailInvalid = () => {
         setEmailValid(false);
-        setSubmissionErrorMessage('This email address seems invalid');
+        setSubmissionErrorMessage(t('This email address seems invalid'));
     }
 
     const emailSubmitHandler = () => validateEmailAddress(emailAddress) ? handleEmailValid() : handleEmailInvalid();

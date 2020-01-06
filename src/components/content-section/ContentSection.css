@@ -1,0 +1,17 @@
+.landing-header {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.section-dark {
+    background-color: #111;
+}
+
+.section-white {
+    background-color: white;
+    color: black;
+}
+
+.subtitle-container > p {
+    font-size: 18px;
+}
